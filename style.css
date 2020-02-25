@@ -44,6 +44,12 @@ body > table{
     width: 80%;
 }
 
+
+.title-register{
+    margin-top:10px;
+}
+
+
 table{
     border-collapse: collapse;
 }

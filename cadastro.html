@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hotel Recode - Cadastro</title>
+    <script src="script.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+<!--Menu Start-->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <img class='navbar-brand logoRecode' href="/" src="/img/logo.png"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav d-flex ">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/cadastro.html">Cadastro<span class="sr-only">(current)</span></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+<!--End Menu-->
+
+<div class="container-fluid">
+    <section class="container text-center">
+       
+       <section class="d-flex flex-wrap justify-content-center pt-5">
+           <div class="container-fluid col-12 justify-content-center"><h1> Cadastre um Quarto</h1></div>
+       </section>
+       <form onsubmit="event.preventDefault();onFormSubmit();" class="formcontato form-group col-md-12 justify-content-center" method="POST" autocomplete="off">
+        <label for="Room">Quarto:</label>
+        <input type="text" class="col-md-6 col-sm-6 text-center" placeholder="Nome do Quarto" name="Room" id="Room" required/>
+
+
+        <section class="m-0 col-12">
+            <label for="User">Cliente:</label>
+            <input type="text" class="col-md-3 col-sm-6 text-center" placeholder="Nome do Cliente" name="User" id="User" required/>
+            <label for="Price">Preço:</label>
+            <input type="number" class="col-md-2 col-sm-6 text-center" name="Price" placeholder="valor do Quarto" id="Price" required/>
+        </section>
+
+            <section class="m-0 col-12">
+                <label for="Time">Hora:</label>
+                <input type="time" class="col-md-1 col-sm-6 text-center" name="Time" id="Time" required/>
+                
+                <label for="Date">Data:</label>
+                <input type="date" class="col-md-3 col-sm-6 text-center" name="Date" placeholder="digite a data" id="Date" required/>
+            </section>
+
+
+
+            <div class="button btn d-flex flex-wrap justify-content-center">
+                <input class="col-12 col-sm-6 btn btn-primary" name='acao' value='Submit' type="Submit" onclick="return validar_form_contato()"/>
+            </div>
+
+   
+        </form>
+
+
+        <td>
+            <table class="list" id='employeeList'>
+                <tr>
+                    <th>Quarto</th>
+                    <th>Cliente</th>
+                    <th>Preço</th>
+                    <th>Hora</th>
+                    <th>Data</th>
+                    <th>Edit/Remove</th>
+                </tr>
+            </table>
+        </td>
+
+
+
+
+</section>
+</div>
+
+
+      <!--bootstrap configure-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
